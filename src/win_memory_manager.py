@@ -35,7 +35,7 @@ class MemoryManager:
 
     def read_byte(self, address):
         """
-        doc
+        Lê o valor armazenado em um endereço de memória
         """
         if self.process_manager == None:
             print("Gerenciador de processo não foi inicializado, abortando código")
@@ -56,7 +56,7 @@ class MemoryManager:
 
     def write_byte(self, address, value):
         """
-        doc
+        Escreve um valor em um determinado endereço na memória
         """
         if self.process_manager == None:
             print("Gerenciador de processo não foi inicializado, abortando código")
