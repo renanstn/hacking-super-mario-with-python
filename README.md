@@ -33,3 +33,7 @@ pip install -r requirements.txt
 ```
 python src/main.py
 ```
+
+## Observação
+
+Este projeto funciona somente em **Windows**.
