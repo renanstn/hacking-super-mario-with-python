@@ -1,4 +1,4 @@
-# Hacking super mario with Python
+# Hacking Super Mario World with Python
 
 ![screenshot](https://github.com/renanstd/hacking-super-mario-with-python/blob/master/screenshots/screen01.png)
 
