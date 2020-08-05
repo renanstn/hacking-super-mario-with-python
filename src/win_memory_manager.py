@@ -41,6 +41,10 @@ class MemoryManager:
             print("Gerenciador de processo não foi inicializado, abortando código")
             exit(1)
 
+        # No caso do SNES, as variáveis que estamos trabalhando possuem
+        # 1 byte de tamanho cada, por isso definimos o buffer logo abaixo
+        # como um 'c_ubyte'. Para mais informações, segue o link:
+        # https://docs.python.org/3/library/ctypes.html#fundamental-data-types
         buffer = ctypes.c_ubyte()
         bytread = ctypes.c_ubyte()
 

@@ -9,7 +9,8 @@ class Hack:
 
     def status_fixed(self):
         """
-        Faz com que o mário nunca perca a capa
+        Mantém o status do mário sempre em 2, fazendo assim com que
+        ele nunca perca a capa, e torne-se invencível
         """
         actual_state = self.memory_manager.read_byte(STATUS)
         print("Status atual: ", actual_state)
@@ -18,6 +19,8 @@ class Hack:
                 STATUS,
                 STATUS_CAPE.to_bytes(1, byteorder='little')
             )
+            # O byteorder='little' significa 'little endian', é relacionado
+            # ao modelo da arquitetura do processador.
 
     def have_99_coins(self):
         """
