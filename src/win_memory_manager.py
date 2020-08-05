@@ -36,6 +36,7 @@ class MemoryManager:
     def read_byte(self, address):
         """
         Lê o valor armazenado em um endereço de memória
+        https://docs.microsoft.com/en-us/windows/win32/api/memoryapi/nf-memoryapi-readprocessmemory
         """
         if self.process_manager == None:
             print("Gerenciador de processo não foi inicializado, abortando código")
@@ -61,6 +62,7 @@ class MemoryManager:
     def write_byte(self, address, value):
         """
         Escreve um valor em um determinado endereço na memória
+        https://docs.microsoft.com/en-us/windows/win32/api/memoryapi/nf-memoryapi-writeprocessmemory
         """
         if self.process_manager == None:
             print("Gerenciador de processo não foi inicializado, abortando código")
