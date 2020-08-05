@@ -13,7 +13,7 @@ Este estudo foi possível graças a [este](https://github.com/danilo94/SuperMari
 
 Para que este script funcione, você precisa encontrar os **endereços de memória** no emulador, que armazenam a quantidade de moedas, e o status do Mario. Este processo geralmente é fácil de fazer se você utilizar o [Cheat Engine](https://www.cheatengine.org/), você pode aprender como fazer isso [aqui](https://www.youtube.com/watch?v=4jZE6XP0_QQ).
 
-Após encontrar os endereços, mantenha o emulador aberto, e insira os mesmos no arquivo `src/addresses.py`, nos campos `COINS` E `STATUS`.
+Após encontrar os endereços, mantenha o emulador aberto, e insira os mesmos no arquivo `src/addresses.py`, nos campos `COINS` e `STATUS`.
 
 Ao executar o script, ele irá se conectar com o processo do snes9x, e constantemente ler e sobrescrever na memória os valores de moedas e o status do Mario.
 
